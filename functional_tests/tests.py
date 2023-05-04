@@ -2,6 +2,7 @@ from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+from selenium.common.exceptions import WebDriverException
 
 MAX_WAIT = 5
 
@@ -63,4 +64,4 @@ class NewVisitorTest(LiveServerTestCase):
             except (AssertionError, WebDriverException) as e:  
                 if time.time() - start_time > MAX_WAIT:  
                     raise e  
-                time.sleep(0.5
+                time.sleep(0.5)
