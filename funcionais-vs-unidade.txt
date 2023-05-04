@@ -1,0 +1,7 @@
+Testes funcionais
+
+- sao mais lentos,  complexos e com menos frequencia
+
+Testes de Unidades
+
+- sao mais rapidos, mais simples, e constituem da grande parte da SUT.
